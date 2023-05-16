@@ -1,6 +1,111 @@
 <html>
     <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <style>
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+
+
+
+
             body {
               font-size: 35px;
             }
@@ -13,13 +118,38 @@
           </style>
         <title>Snigdha Ditgital Studio</title>
         </head>
-        <body style="background-color:rgb(148, 225, 255); border: 15px solid #51f80e;"><marquee ><h1 style="color:rgb(255, 55, 55)"><u>Welcome To Snigdha Digital Studio</h1></u></h1></marquee></body></html>
-        <ul><article>
-            <li>For sent Gmail &nbsp; &nbsp; <a href="mailto:shafiqms.bd@gmail.com">Click Here</a>&nbsp;&nbsp;&nbsp; </li></br>
-            <li>For sent message through Facebook or Messenger <a href="https://m.me/shafiqms.bd">Click Here(Messenger)</a>&nbsp;&nbsp;&nbsp;OR &nbsp;&nbsp;<a href="https://www.facebook.com/shafiqms.bd/">Click Here (Facebook)</a>&nbsp;&nbsp;&nbsp; </li></br>
-            <li>For sent Whatsapp Message &nbsp; &nbsp;<a href="https://api.whatsapp.com/send/?phone=8801728806416">Click Here</a>&nbsp; &nbsp; OR &nbsp; &nbsp; <a href="https://wa.me/8801728806416">Click Here</a></li></br>
-            <li>For sent Telegram Message &nbsp; &nbsp;<a href="https://t.me/shafiqmsbd">Click Here</a>&nbsp; &nbsp;</li></br>
-          </ul></article>
+        <body style="background-color:rgb(148, 225, 255); border: 8px solid #51f80e;">
+          
+
+
+
+            
+          <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Eagle Hunter</label>
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </nav>
+        </br>
+
+
+
+
+          <marquee ><h1 style="color:rgb(255, 55, 55)"><u>Welcome To Snigdha Digital Studio</h1></u></h1></marquee></body></html>
+      </br></br>
+          &nbsp;For sent Gmail &nbsp; &nbsp; <a href="mailto:shafiqms.bd@gmail.com">Click Here</a>&nbsp;&nbsp;&nbsp; </br>
+          &nbsp;For sent message through Facebook or Messenger <a href="https://m.me/shafiqms.bd">Click Here(Messenger)</a>&nbsp;&nbsp;&nbsp;OR &nbsp;&nbsp;<a href="https://www.facebook.com/shafiqms.bd/">Click Here (Facebook)</a>&nbsp;&nbsp;&nbsp; </br>
+          &nbsp;For sent Whatsapp Message &nbsp; &nbsp;<a href="https://api.whatsapp.com/send/?phone=8801728806416">Click Here</a>&nbsp; &nbsp; OR &nbsp; &nbsp; <a href="https://wa.me/8801728806416">Click Here</a></br>
+          &nbsp;For sent Telegram Message &nbsp; &nbsp;<a href="https://t.me/shafiqmsbd">Click Here</a>&nbsp; &nbsp;</br>
+          
           <footer>
             <p><address>Author: Md. Sohan Millat Sakib</br>
                 Email:&nbsp;<a href="mailto:millatsakib01@gmail.com">millatsakib01@gmail.com</a></br>
