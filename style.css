@@ -104,9 +104,18 @@
               font-size: 35px;
             }
             footer{
+                position: relative;
+                grid-column: 1/-1;
+                width: auto;
+                height: auto;
+                top: 250px;
                 text-align:center;
                 padding: 3px;
                 background-color: darksalmon;
                 color:white;
+            }
+
+            h1{
+                text-align: center;
             }
           
