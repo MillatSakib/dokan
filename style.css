@@ -1,3 +1,29 @@
+.input-filed{
+    background-color: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+}
+input{
+    width: auto;
+    background: transparent;
+    border: 1;
+    outline: 0;
+    padding: 9px 25px;
+}
+.button1 {
+     background-color : #4CAF50 ;
+     border: none;
+     color : white ;
+     padding : 8px 20px ;
+     text-align : center;
+     text-decoration : none;
+     display : inline-block ;
+     font-size : 16px ;
+     margin: 4px 2px ;
+     cursor: pointer;
+    }
 
 .navbar{
     list-style: none;
