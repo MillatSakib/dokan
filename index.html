@@ -31,9 +31,29 @@
       </br></br>
           &nbsp;For sent Gmail &nbsp; &nbsp; <a href="mailto:shafiqms.bd@gmail.com">Click Here</a>&nbsp;&nbsp;&nbsp; </br></br>
           &nbsp;For sent message through Facebook or Messenger <a href="https://m.me/shafiqms.bd">Click Here(Messenger)</a>&nbsp;&nbsp;&nbsp;OR &nbsp;&nbsp;<a href="https://www.facebook.com/shafiqms.bd/">Click Here (Facebook)</a>&nbsp;&nbsp;&nbsp; </br></br>
-          &nbsp;For sent Whatsapp Message &nbsp; &nbsp;<a href="https://api.whatsapp.com/send/?phone=8801728806416">Click Here</a>&nbsp; &nbsp; OR &nbsp; &nbsp; <a href="https://wa.me/8801728806416">Click Here</a></br></br>
+          &nbsp;For sent Whatsapp Message  to our store &nbsp; &nbsp;<a href="https://api.whatsapp.com/send/?phone=8801728806416">Click Here</a>&nbsp; &nbsp; OR &nbsp; &nbsp; <a href="https://wa.me/8801728806416">Click Here</a></br></br>
           &nbsp;For sent Telegram Message &nbsp; &nbsp;<a href="https://t.me/shafiqmsbd">Click Here</a>&nbsp; &nbsp;</br></br>
-          
+
+          <script>
+            window.onload=function() {
+              document.getElementById("test").onsubmit=function() {
+                var texto = this.redir.value;
+                if (texto) {
+                  // next line only needed for non-html5 aware browsers or type="text"
+                  texto = 'https://api.whatsapp.com/send/?phone='+texto;
+                  //document.getElementById("red").innerHTML = "<a target='_blank' href='" + texto + "'>Click</a> Para continuar.";
+                  window.location.href=texto;
+                }
+                return false;
+              }
+            }
+            </script>     
+            
+            <form id="test">
+            If you want to sent message through Phone No. input Phone No. with Country Code&nbsp;:&nbsp;<input type="number" placeholder="Input Phone No.(+880)xxxxxxxxxx" id="redir" name="redir" required/>&nbsp;
+            <input type="submit" value="Sent Message"/>
+            </form>
+
           <footer>
             <p><address>Author: Md. Sohan Millat Sakib</br>
                 Email:&nbsp;<a href="mailto:millatsakib01@gmail.com">millatsakib01@gmail.com</a></br>
