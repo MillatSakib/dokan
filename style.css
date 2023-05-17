@@ -1,5 +1,5 @@
 .input-filed{
-    background-color: #eaeaea;
+    //background-color: #eaeaea;
     margin: 15px 0;
     border-radius: 3px;
     display:flex;
@@ -62,7 +62,7 @@ input{
                 top: 250px;
                 text-align:center;
                 padding: 3px;
-                background-color: darksalmon;
+                background-color: rgb(37, 37, 37);
                 color:white;
             }
 
@@ -70,3 +70,41 @@ input{
                 text-align: center;
             }
           
+
+
+            /* unvisited link */
+ .foota:link {
+    color: rgb(255, 133, 133);
+  }
+  
+  /* visited link */
+  .foota:visited {
+    color: rgb(153, 255, 153);
+  }
+  
+  /* mouse over link */
+  .foota:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* selected link */
+  .foota:active {
+    color: rgb(95, 95, 255);
+  }
+
+  .developer{
+    text-align: right;
+  }
+
+  .inputfiled{
+    text-align: center;
+    border-color: blueviolet;
+    border: 3px solid #555;
+    border-radius: 60px;
+    padding-bottom: 15px;
+    padding-top: auto;
+    padding-left: auto;
+    padding-right: auto;
+    background: hsl(0, 100%, 77%);
+    margin: 15px 0;
+  }
