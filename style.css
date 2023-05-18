@@ -1,5 +1,5 @@
 .input-filed{
-    background-color: #eaeaea;
+    //background-color: #eaeaea;
     margin: 15px 0;
     border-radius: 3px;
     display:flex;
@@ -69,7 +69,14 @@ input{
             h1{
                 text-align: center;
             }
+<<<<<<< HEAD
                       /* unvisited link */
+=======
+          
+
+
+            /* unvisited link */
+>>>>>>> f2a2dc977eab8b302c63977c74799feed4115720
  .foota:link {
     color: rgb(255, 133, 133);
   }
@@ -88,6 +95,10 @@ input{
   .foota:active {
     color: rgb(95, 95, 255);
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2a2dc977eab8b302c63977c74799feed4115720
   .developer{
     text-align: right;
   }
