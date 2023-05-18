@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+if(isset($_POST['submit'])){
+    $user=$_POST['username'];
+    $pass=$_POST['password'];
+    $us= 'admin';
+    $pas= 'admin';
+    if(($user== $us) && ($pass== $pas)){
+        header("Location: index.html");
+die();
+    }
+}
+?>
 <html>
     <head>
        <meta charset="utf-8">
@@ -31,19 +43,19 @@
 
 
         <div class="form">
-            <form id="test" class="inputfiled">
+            <form id="test" class="inputfiled" method="post">
                 <h4 class="username_input">Username &nbsp;&nbsp;&nbsp;&nbsp;
                     <i class ="fas fa-user"></i>
-                    &nbsp;&nbsp;<input type="text" placeholder="Type your User ID" id="text" required> </h4>
+                    &nbsp;&nbsp;<input type="text" name="username" placeholder="Type your User ID" id="username" required> </h4>
                 <section class="pass">
                     <h4 class="password_input">Password  &nbsp;&nbsp;&nbsp;
                         <i class ="fas fa-lock"></i>
-                        &nbsp;&nbsp;<input type="password" id="pass" placeholder="Type your User Password" required>
+                        &nbsp;&nbsp;<input type="password" id="password" name="password" placeholder="Type your User Password" required>
                     </h4>
                 </section>
                 <section class="button">
                 <section class="bt1">
-                    <input type="submit" value="Log in">
+                    <input type="submit" name="submit" value="Log in">
                 </section>
             </section>
             </section>
