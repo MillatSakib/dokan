@@ -1,3 +1,14 @@
+.personal{
+  text-align: center;
+}
+
+.c_code{
+  background-color:#47aa4b;
+  padding : 6px 16px ;
+  font-size : 18px ;
+  color: aliceblue;
+
+}
 .input-filed{
     margin: 15px 0;
     border-radius: 3px;

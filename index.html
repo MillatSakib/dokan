@@ -38,9 +38,10 @@
             window.onload=function() {
               document.getElementById("test").onsubmit=function() {
                 var texto = this.redir.value;
+                var code= this.country_code.value;
                 if (texto) {
                   // next line only needed for non-html5 aware browsers or type="text"
-                  texto = 'https://api.whatsapp.com/send/?phone='+texto;
+                  texto = 'https://api.whatsapp.com/send/?phone='+code+texto;
                   //document.getElementById("red").innerHTML = "<a target='_blank' href='" + texto + "'>Click</a> Para continuar.";
                   window.location.href=texto;
                 }
@@ -50,9 +51,210 @@
             </script>     
             
             <form id="test" class="input-filed">
-            If you want to sent message through Phone No. input Phone No. with Country Code&nbsp;:&nbsp;<input type="number" placeholder="Input Phone No.(+880)xxxxxxxxxx" id="redir" name="redir" required/>&nbsp;
+            If you want to sent message through Phone No. input Phone No. with Country Code<br>&nbsp;:&nbsp;
+            <div class="personal">
+            <select class="c_code" name="country_code" id="country_code"><option value="88">Bangaldesh(+88)</option> 
+              <option value="93">Afghanistan(+93)</option> 
+              <option value="355">Albania(+355)</option> 
+              <option value="213">Algeria(+213)</option> 
+              <option value="1684">Ameriacan Samoa(+1684)</option> 
+              <option value="376">Andorra(+376)</option> 
+              <option value="244">Angola(+244)</option> 
+              <option value="1264">Anguilla(+1264)</option> 
+              <option value="888">Anonymous Numbers(+888)</option> 
+              <option value="1268">Antigua & Barbuda(+1268)</option> 
+              <option value="54">Argentina(+54)</option> 
+              <option value="374">Armenia(+374)</option> 
+              <option value="297">Aruba(+297)</option> 
+              <option value="61">Australia(+64)</option> 
+              <option value="43">Austria(+43)</option> 
+              <option value="994">Azerbaijan(+994)</option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              <option value=""></option> 
+              
+
+            </select>
+              &nbsp;<input type="number" placeholder="Input Phone No.xxxxxxxxxx" id="redir" name="redir" required/>&nbsp;
             <input type="submit" value="Sent Message" class ="button button1"/>
             </form>
+          </div>
+
+
             <footer>
               <p><address>Author: Md. Sohan Millat Sakib</br>
                   Email:&nbsp;<a href="mailto:millatsakib01@gmail.com" class="foota">millatsakib01@gmail.com</a></br>
