@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+.bold{
+  color: rgb(255, 41, 41);
+}
 .c_code{
   background-color:#47aa4b;
   padding : 6px 16px ;

@@ -8,5 +8,8 @@ if(isset($_POST['submit'])){
         header("Location: index.html");
 die();
     }
+    else{
+        echo("Username or Password are wrong");
+    }
 }
 ?>
