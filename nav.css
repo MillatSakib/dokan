@@ -1,0 +1,24 @@
+.chaka{
+    list-style: none;
+    background-color: rgb(60, 230, 37);
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    }
+    .chaka ul{
+    text-align: center;
+    padding: 5px 20px;
+    }
+    .chaka ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+    color: wheat;
+    
+    }
+    .chaka ol li:hover {
+        background-color: darkorange;
+        translate:-10px -10px;
+        cursor: pointer;
+    }
