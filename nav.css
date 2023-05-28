@@ -1,24 +1,27 @@
+.chakac{
+    color: aliceblue;
+}
+.chakac:hover{
+    color: rgb(144, 255, 227);
+}
+
 .chaka{
     list-style: none;
-    background-color: rgb(60, 230, 37);
+    background-color: rgb(75, 73, 73);
     margin: 0;
     padding: 0;
     width: auto;
     height: auto;
+    font-size: 18px;
     }
     .chaka ul{
-    text-align: center;
-    padding: 5px 20px;
-    }
-    .chaka ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 30px;
-    color: wheat;
-    
-    }
-    .chaka ol li:hover {
-        background-color: darkorange;
-        translate:-10px -10px;
-        cursor: pointer;
-    }
+        text-align: center;
+        padding: 15px 30px;
+        }
+        .chaka ul li{
+            list-style: none;
+            display: inline-flex;
+            padding: 5px 30px;
+            color: wheat;
+        
+        }
