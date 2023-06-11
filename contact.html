@@ -75,7 +75,55 @@
         Whasapp: <a href="https://wa.me/8801728806416">01728806416</a><br>
         Messenger: <a href="https://m.me/shafiqms.bd">https://m.me/shafiqms.bd</a><br>
         Telegram: <a href="https://t.me/shafiqmsbd">01728806416</a>
-        <br>For get Google Map derection <a href="https://www.google.com/maps/dir//24.0763333,89.6086667/@your_location/data=!4m5!4m4!1m1!4e2!1m0!3e2?entry=ttu">Click Here</a>
+        <br>For get Google Map derection: <a href="" onclick="getLocation()">Click Here</a>
+
+        <script>
+
+            /*
+            I get the knowledge form w3school (https://www.w3schools.com/html/html5_geolocation.asp) and chat gpt response.. The chatgpt response given bellow
+            
+            If you want to generate a Google Maps API link that provides directions between two locations, you can use the following URL structure:
+            
+            ruby
+            Copy code
+            https://www.google.com/maps/dir/?api=1&origin=ORIGIN_LATITUDE,ORIGIN_LONGITUDE&destination=DESTINATION_LATITUDE,DESTINATION_LONGITUDE
+            Replace ORIGIN_LATITUDE and ORIGIN_LONGITUDE with the latitude and longitude of the starting point, and DESTINATION_LATITUDE and DESTINATION_LONGITUDE with the latitude and longitude of the destination.
+            
+            For example, if you want to generate a link that provides directions from latitude 37.7749 and longitude -122.4194 (San Francisco) to latitude 34.0522 and longitude -118.2437 (Los Angeles), the API link would be:
+            
+            ruby
+            Copy code
+            https://www.google.com/maps/dir/?api=1&origin=37.7749,-122.4194&destination=34.0522,-118.2437
+            When you open this link in a web browser, it will display the directions from the starting point to the destination on Google Maps.
+            
+            Please note that this link uses the Google Maps Directions API, and you may need to have an API key or be authenticated depending on your usage and the specific requirements of the API.*/
+            
+            function getLocation() {
+            if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
+            
+            
+            function showPosition(position) {
+            var latitude = position.coords.latitude ;
+            var longitude = position.coords.longitude;
+            linkrel= 'https://www.google.com/maps/dir/?api=1&origin=24.0763333,89.6086667&destination='+latitude+','+longitude ;
+            window.location.href=linkrel;
+            }
+                    </script>
+            
+            
+
+            
+
+
+
+
+
+
         <br><br>Contact Time:-  8:00AM To 10:00PM<br><br><div style="color: red"> Store is Open from 8:30AM to 8:00PM</div>
         
     
@@ -85,6 +133,10 @@
     
     <iframe class="mapmanage" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d227.66966504669395!2d89.6085369347919!3d24.0763515311928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1685275950662!5m2!1sen!2sbd"  height="800" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">uytutyuy</iframe>
     
+    
+    
+
+
     <footer>
       <p><address>Author: Md. Sohan Millat Sakib</br>
           Email:&nbsp;<a href="mailto:millatsakib01@gmail.com" class="foota">millatsakib01@gmail.com</a></br>
