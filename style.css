@@ -1,5 +1,10 @@
 .underline{
-  text-decoration: underline rgb(47, 0, 255);
+  text-decoration: underline rgb(45, 45, 252);
+  font-weight: bold;
+  color : rgb(45, 45, 252);
+  border: 0;
+  font-size : 25px ;
+  cursor: pointer;
 }
 
 
