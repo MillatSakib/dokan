@@ -12,8 +12,12 @@
   align-items: center;
 }
 
-
-
+body {
+  display: none;
+}
+#page-content {
+  display: block;
+}
 .invisible_button {
   text-decoration: underline rgb(45, 45, 252);
   font-weight: bold;
