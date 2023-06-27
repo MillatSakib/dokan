@@ -24,7 +24,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/bgimage.jpg");
+  background-image: url("https://raw.githubusercontent.com/MillatSakib/dokan/main/bgimage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
