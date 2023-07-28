@@ -128,6 +128,17 @@
             </a>
             
           </div>
+          <!---I using here local storege.-->
+          <p>
+            <script type = "text/javascript">
+             
+             if( localStorage.hits ) {
+                localStorage.hits = Number(localStorage.hits) +1;
+             } else {
+                localStorage.hits = 1;
+             }
+             document.write("Total Hits By You :" + localStorage.hits );
+          </script></p>
     <p><address>Author: Md. Sohan Millat Sakib</br>
         Email:&nbsp;<a href="mailto:millatsakib01@gmail.com" class="foota">millatsakib01@gmail.com</a></br>
         Studing At:&nbsp;&nbsp;<i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;<a href="https://green.edu.bd/" class="foota">Green University of Bangaldesh</a><br>
