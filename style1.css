@@ -1,3 +1,9 @@
+.page {
+    display: none;
+}
+.active {
+    display: block;
+}
 .text{
     text-align: justify;
     
